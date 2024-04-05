@@ -1,0 +1,38 @@
+Question 1: What is Python?**
+1. Python is a high-level programming language.
+2. It emphasizes readability and simplicity.
+3. Python is interpreted, meaning code is executed line by line.
+4. It supports multiple programming paradigms, including procedural, object-oriented, and functional programming.
+5. Python has a large standard library and a vibrant community contributing to its development.
+
+Question 2: Who created Python?**
+1. Python was created by Guido van Rossum.
+2. Guido van Rossum started Python as a hobby project in the late 1980s.
+3. He aimed to create a language that would be easy to learn and read.
+4. Python's first version, Python 0.9.0, was released in February 1991.
+5. Guido van Rossum continued to lead Python's development until he retired in 2018.
+
+Question 3: What are the advantages of using Python?**
+1. Readability: Python's syntax is clear and easy to understand.
+2. Versatility: Python can be used for a wide range of applications, from web development to scientific computing.
+3. Large Standard Library: Python comes with a vast collection of modules and libraries for various tasks.
+4. Community Support: Python has a large and active community of developers offering support and resources.
+5. Interpreted Language: Python's interpreted nature allows for rapid development and testing.
+
+Question 4: What are the disadvantages of using Python?**
+1. Performance: Python can be slower than languages like C or C++ for certain tasks.
+2. Global Interpreter Lock (GIL): Python's GIL can limit concurrency in multithreaded applications.
+3. Mobile Development: Python's support for mobile app development is limited compared to other languages.
+4. Design Restrictions: Python's dynamic typing can lead to runtime errors that may be caught at compile time in statically 
+typed languages.
+5. Dependency Management: Python's dependency management can be complex, especially in larger projects with many dependencies.
+
+Question 5: Why is Python used in machine learning?**
+1. Rich Ecosystem: Python has a rich ecosystem of libraries and frameworks for machine learning, such as TensorFlow, PyTorch, and 
+scikit-learn.
+2. Ease of Use: Python's simple syntax and readability make it easy to prototype and experiment with machine learning algorithms.
+3. Data Analysis Tools: Python's libraries like NumPy, pandas, and matplotlib provide powerful tools for data analysis and visualization,
+ essential in machine learning workflows.
+4. Community Support: Python's large and active community provides support, tutorials, and resources for machine learning practitioners.
+5. Integration: Python seamlessly integrates with other technologies commonly used in machine learning, such as databases,
+ web frameworks, and cloud services.

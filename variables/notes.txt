@@ -1,0 +1,66 @@
+
+Variables:
+In Python, a variable is a symbolic name that refers to a value.
+ Variables are used to store data that can be referenced and manipulated in a program. 
+
+ Example:
+ # Assigning a value to a variable
+x = 10
+
+# You can also assign different types of values to the same variable
+x = "Hello, world!"
+
+# Variables can be used in expressions
+y = 5
+z = x + str(y)  # This will concatenate the string stored in x with the string representation of y
+
+# Variables can be used to store different types of data
+a = 3.14  # Float
+b = True  # Boolean
+c = [1, 2, 3]  # List
+
+# You can also assign the same value to multiple variables simultaneously
+x = y = z = 0
+
+# Variables can be reassigned with a new value
+x = 5
+x = x + 1  # x is now 6
+
+# Python supports dynamic typing, so you can change the type of a variable
+x = 5  # x is an integer
+x = "five"  # x is now a string
+
+# Variable names in Python can contain letters, numbers, and underscores, but must start with a letter or underscore.
+# They are case-sensitive.
+my_variable = 42
+My_Variable = "Hello"
+
+# However, there are some reserved words (keywords) that cannot be used as variable names.
+# For example, 'if', 'else', 'for', 'while', etc.
+
+Rules for declaring variable :
+
+
+(1)Naming Convention: Variable names in Python can contain letters (both uppercase and lowercase),
+ numbers, and underscores (_), but they must start with a letter or an underscore. 
+ They cannot start with a number. Additionally, variable names are case-sensitive,
+  meaning my_variable and My_Variable are considered different variables.
+
+(2)Reserved Words: Python has reserved words, also known as keywords, which cannot be used as variable names because
+they have special meanings in the language. Some examples include if, else, for, while, def, class, import, True, False, and None. 
+Attempting to use a reserved word as a variable name will result in a syntax error.
+
+(3)Dynamic Typing: Python is dynamically typed, meaning you don't need to specify the type of a variable when you declare it. 
+The type of the variable is inferred based on the value assigned to it. This allows variables to hold different
+ types of values at different times during the execution of the program.
+
+(4)Reassignment: Variables can be reassigned with a new value at any time. Python allows you to change the type of a variable by assigning
+ it a value of a different type. For example, you can assign an integer to a variable and later assign a string to the same variable.
+
+(5)Scope: Variables in Python have a scope, which determines the visibility and lifetime of the variable. 
+Variables defined inside a function are local to that function and can only be accessed within the function. 
+Variables defined outside of any function, at the top level of a script or module, are global variables and can be accessed from
+ anywhere in the module.
+
+(6)Assignment Operator: In Python, the assignment operator is the equals sign (=). It is used to assign a value to a variable. 
+For example, x = 5 assigns the value 5 to the variable x.

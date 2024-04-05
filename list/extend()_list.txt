@@ -1,0 +1,27 @@
+The `extend()` method in Python is used to extend a list by appending elements from another iterable
+ (such as a list, tuple, set, or any other iterable object) to the end of the original list. 
+ Unlike the `append()` method, which adds a single element to the end of the list, `extend()` can add multiple elements from 
+ an iterable.
+
+Syntax:
+```
+list.extend(iterable)
+```
+
+Parameters:
+- `iterable`: An iterable object whose elements will be appended to the end of the list.
+
+Return Value:
+- The `extend()` method modifies the original list in place. It doesn't return anything (`None`).
+
+Example:
+```python
+my_list = [1, 2, 3]
+other_list = [4, 5, 6]
+my_list.extend(other_list)
+print(my_list)  # Output: [1, 2, 3, 4, 5, 6]
+```
+
+In this example:
+- The `extend()` method is called on the list `my_list` with `other_list` as the argument.
+- The elements from `other_list` (`[4, 5, 6]`) are appended to the end of `my_list`, resulting in `[1, 2, 3, 4, 5, 6]`.

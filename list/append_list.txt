@@ -1,0 +1,16 @@
+The append() method in Python is used to add an element to the end of a list. It modifies the original list by adding the 
+specified element as its last element.
+
+Syntax:
+list.append(element)
+Parameters:
+
+element: The element to be added to the end of the list.
+Return Value:
+
+The append() method doesn't return anything (None), it just modifies the original list in place.
+Example:
+my_list = [1, 2, 3]
+my_list.append(4)
+print(my_list)  # Output: [1, 2, 3, 4]
+In this example, the append() method adds the element 4 to the end of the list my_list, resulting in [1, 2, 3, 4].

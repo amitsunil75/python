@@ -1,0 +1,14 @@
+Separators:
+In Python, sep is a parameter often used in the print() function. It stands for "separator" and allows you to specify the
+ character or string that separates multiple items when they are printed. By default, sep is set to a single
+ space character.
+
+
+ # Using sep to specify a separator between items
+print("apple", "banana", "orange", sep=",")  # Output: apple,banana,orange
+
+# You can use any string as a separator
+print("one", "two", "three", sep=" *** ")  # Output: one *** two *** three
+
+# You can also specify an empty string as a separator
+print("Hello", "world", sep="")  # Output: Helloworld

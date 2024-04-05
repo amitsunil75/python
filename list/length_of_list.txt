@@ -1,0 +1,18 @@
+# Sample list
+# Length of List in python
+my_list = [1, 2, 3, 4, 5]
+
+# Get the length of the list
+length_of_list = len(my_list)
+
+# Print the length of the list
+print("Length of the list:", length_of_list)
+# The len() function in Python is a built-in function used to determine the length of a sequence or collection.
+# It returns the number of items in an object such as a list, tuple, string, dictionary, or any other iterable object.
+
+# Syntax:
+
+# python
+# Copy code
+# len(object)
+

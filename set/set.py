@@ -89,3 +89,19 @@ print(st1.symmetric_difference(st2))
 # output:{0, 1, 3, 5, 7, 8, 11, 14, 17}
 print(st1.symmetric_difference_update(st2))
 # output:None
+# convert list to set
+li1=[1,2,3,4,5,6,99,99,100,10000,1000,5000,6000,7000,5000,6000,2000,100,2,3,4,5]
+print(set(li1))
+# output:{1, 2, 3, 4, 5, 6, 99, 100, 1000, 5000, 10000, 6000, 2000, 7000}
+# convert tuple to set
+tp=2,4,6,8,9,20,22,20,23
+print(type(tp))
+print(set(tp))
+# output:
+# <class 'tuple'>
+# {2, 4, 6, 8, 9, 20, 22, 23}
+dt={"name":"amit","nature":"Kind","age":"15","race":"indian"}
+print(set(dt))
+# output:{'nature', 'race', 'name', 'age'}
+print(set(dt.values()))
+# output:{'indian', 'amit', 'Kind', '15'}

@@ -1,0 +1,27 @@
+The `insert()` method in Python is used to insert an element into a list at a specified index. It modifies the original 
+list by adding the specified element at the specified index, shifting the existing elements to the right.
+
+Syntax:
+```
+list.insert(index, element)
+```
+
+Parameters:
+- `index`: The index at which the element should be inserted into the list.
+- `element`: The element to be inserted into the list.
+
+Return Value:
+- The `insert()` method doesn't return anything (`None`); it just modifies the original list in place.
+
+Example:
+```python
+my_list = [1, 2, 3, 4, 5]
+my_list.insert(2, "apple")
+print("Updated list:", my_list)  # Output: Updated list: [1, 2, 'apple', 3, 4, 5]
+```
+
+In this example:
+- The `insert()` method is called on the list `my_list`.
+- It inserts the element `"apple"` at index `2`, shifting the existing elements to the right.
+- The updated list `[1, 2, 'apple', 3, 4, 5]` is printed. Note that indexing in Python starts from 0, 
+so the element `"apple"` is inserted at index `2`, between `2` and `3`.

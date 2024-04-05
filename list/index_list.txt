@@ -1,0 +1,31 @@
+The `index()` method in Python is used to find the index of the first occurrence of a specified value in a list.
+ It returns the index of the first occurrence of the specified element.
+
+Syntax:
+```
+list.index(value, start, end)
+```
+
+Parameters:
+- `value`: The value whose index needs to be found in the list.
+- `start` (optional): The index in the list where the search starts. If not specified, the search starts from the beginning of 
+the list (index 0).
+- `end` (optional): The index in the list where the search ends. If not specified, the search ends at the end of the list.
+
+Return Value:
+- The index of the first occurrence of the specified value in the list.
+
+Note:
+- If the specified value is not found in the list, the `index()` method raises a `ValueError` exception.
+
+Example:
+```python
+my_list = [10, 20, 30, 40, 20]
+index_20 = my_list.index(20)
+print("Index of first occurrence of 20:", index_20)  # Output: Index of first occurrence of 20: 1
+```
+
+In this example:
+- The `index()` method is called on the list `my_list` to find the index of the first occurrence of the value `20`.
+- The index of the first occurrence of `20` in the list (`1`) is returned and printed. Note that indexing in Python starts 
+from 0, so `20` is at index `1`.

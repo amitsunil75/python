@@ -46,3 +46,38 @@ li1.extend(li2)
 print(li1)
 # output:[2, 3, 4, 5, 5, 6, 6, 7, 8, 10, 11, 12, 12, 13, 14, 15, 16, 17, 19]
 # pop()
+print(li1.pop())
+# output:19
+print(li1.pop(5))
+# output:6 it will pop the element in fiveth index
+li1[0:7]='43'
+print(li1)
+# output :['4', '3', 8, 10, 11, 12, 12, 13, 14, 15, 16, 17]
+li1.reverse()
+print(li1)
+# output:[17, 16, 15, 14, 13, 12, 12, 11, 10, 8, '3', '4']
+print(li1)
+print(li1.index(8))
+# output :9 l11:17, 16, 15, 14, 13, 12, 12, 11, 10, 8, '3', '4']
+li1.insert(10,2000)
+print(li1)
+# output:[17, 16, 15, 14, 13, 12, 12, 11, 10, 8, 2000, '3', '4']
+li1.remove(2000)
+print(li1)
+# output:[17, 16, 15, 14, 13, 12, 12, 11, 10, 8, '3', '4']
+print(li1.count(17))
+# output:1
+# convert tuple to list
+tp=3,55,99
+print(list(tp))
+# output:[3, 55, 99]
+# convert set to list
+st={1,2,3,4,5,6}
+print(list(st))
+# output:[3, 55, 99]
+# convert dictionary to list
+dt={"name":"amit","nature":"Kind","age":"15","race":"indian"}
+print(list(dt))
+# output:['name', 'nature', 'age', 'race']
+print(list(dt.values()))
+# output:['amit', 'Kind', '15', 'indian']

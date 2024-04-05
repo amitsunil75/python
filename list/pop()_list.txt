@@ -1,0 +1,25 @@
+The `pop()` method in Python is used to remove and return the last element from a list. It modifies the original list by removing the specified element.
+
+Syntax:
+```
+list.pop(index)
+```
+
+Parameters:
+- `index` (optional): The index of the element to be removed. If no index is specified, `pop()` removes and returns the last element of the list.
+
+Return Value:
+- The value of the element that is removed from the list.
+
+Example:
+```python
+my_list = [1, 2, 3, 4, 5]
+removed_element = my_list.pop()
+print("Removed element:", removed_element)  # Output: Removed element: 5
+print("Updated list:", my_list)  # Output: Updated list: [1, 2, 3, 4]
+```
+
+In this example:
+- The `pop()` method is called on the list `my_list` without specifying an index. Therefore, it removes and returns the last element (`5`) from the list.
+- The value of the removed element (`5`) is stored in the variable `removed_element`.
+- The original list `my_list` is modified, and the last element (`5`) is removed from it. The updated list `[1, 2, 3, 4]` is printed.

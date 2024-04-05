@@ -1,0 +1,30 @@
+In Python, the `symmetric_difference_update()` method is used to modify the original set by keeping 
+only the elements that are unique to either the original set or one or more specified sets.
+ It updates the original set in place, removing elements that are present in both sets and 
+ adding elements that are present in only one of the sets.
+
+Syntax:
+```python
+set.symmetric_difference_update(*other_sets)
+```
+
+Parameters:
+- `*other_sets`: One or more sets to find the symmetric difference with the original set.
+
+Return Value:
+- The `symmetric_difference_update()` method does not return anything (`None`). It modifies the original set in place.
+
+Example:
+```python
+set1 = {1, 2, 3, 4, 5}
+set2 = {3, 4, 5, 6, 7}
+set1.symmetric_difference_update(set2)
+print(set1)  # Output: {1, 2, 6, 7}
+```
+
+In this example:
+- The `symmetric_difference_update()` method is called on `set1` with `set2` as the argument.
+- It modifies `set1` by keeping only the elements that are unique to either `set1` or `set2`.
+- After the operation, `set1` contains only elements `{1, 2, 6, 7}`, which are unique to either `set1` or `set2`.
+
+It's important to note that `symmetric_difference_update()` modifies the original set in place and does not return a new set. If you want to create a new set containing the symmetric difference, you can use the `symmetric_difference()` method instead.

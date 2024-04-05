@@ -1,0 +1,30 @@
+In Python, the `remove()` method is used to remove a specific element from a set. It modifies 
+the original set by removing the specified element if it exists. If the element is not found in the set, 
+the method raises a `KeyError`.
+
+Syntax:
+```python
+set.remove(element)
+```
+
+Parameters:
+- `element`: The element to be removed from the set.
+
+Return Value:
+- The `remove()` method doesn't return anything (`None`).
+
+Example:
+```python
+my_set = {1, 2, 3, 4, 5}
+my_set.remove(3)
+print(my_set)  # Output: {1, 2, 4, 5}
+```
+
+In this example:
+- The `remove()` method is called on the set `my_set` with the argument `3`.
+- It removes the element `3` from the set.
+- The modified set `{1, 2, 4, 5}` is printed.
+
+It's important to note that if the specified element is not present in the set, the `remove()` method 
+raises a `KeyError`. To avoid this, you can use the `discard()` method, which removes an element if it exists,
+ or does nothing if it doesn't exist, without raising an error.

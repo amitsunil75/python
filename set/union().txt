@@ -1,0 +1,35 @@
+In Python, the `union()` method is used to return a new set containing all the distinct elements that
+ are present in either of the two sets. It essentially performs the union operation, which combines the 
+ elements of two sets into a single set, removing any duplicates.
+
+Syntax:
+```python
+set.union(*other_sets)
+```
+
+Parameters:
+- `*other_sets`: One or more sets whose elements are to be combined with the elements of the original set.
+
+Return Value:
+- A new set containing all the distinct elements present in the original set and the specified sets.
+
+Example:
+```python
+set1 = {1, 2, 3}
+set2 = {3, 4, 5}
+union_set = set1.union(set2)
+print(union_set)  # Output: {1, 2, 3, 4, 5}
+```
+
+In this example:
+- The `union()` method is called on `set1` with `set2` as the argument.
+- It returns a new set `{1, 2, 3, 4, 5}` containing all the distinct elements present in `set1` and `set2`.
+- The original sets `set1` and `set2` remain unchanged.
+
+You can also use the `|` operator as a shorthand for the `union()` method:
+```python
+union_set = set1 | set2
+```
+
+Both approaches achieve the same result. The `union()` method allows you to combine multiple sets, while the `|` operator 
+can only be used to combine two sets at a time.

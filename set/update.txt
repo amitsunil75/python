@@ -1,0 +1,30 @@
+In Python, the `update()` method is used to modify a set by adding elements from another iterable
+ (such as another set, list, tuple, or string) to it. The `update()` method modifies the original set in place.
+
+Syntax:
+```python
+set.update(iterable)
+```
+
+Parameters:
+- `iterable`: An iterable object containing elements to be added to the set.
+
+Return Value:
+- The `update()` method doesn't return anything (`None`); it just modifies the original set in place.
+
+Example:
+```python
+set1 = {1, 2, 3}
+set2 = {3, 4, 5}
+
+set1.update(set2)
+print(set1)  # Output: {1, 2, 3, 4, 5}
+```
+
+In this example:
+- The `update()` method is called on `set1` with `set2` as the argument.
+- Elements from `set2` (`{3, 4, 5}`) are added to `set1`.
+- The original `set1` is modified, and its contents are updated to `{1, 2, 3, 4, 5}`.
+
+You can also pass other types of iterables to the `update()` method, such as lists, tuples, or strings, and 
+it will add the elements of those iterables to the set.

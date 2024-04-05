@@ -1,0 +1,35 @@
+In Python, the `intersection()` method is used to return a new set containing elements 
+that are common to both the original set and another specified set. It essentially performs the set intersection operation, 
+which finds elements that exist in both sets.
+
+Syntax:
+```python
+set.intersection(*other_sets)
+```
+
+Parameters:
+- `*other_sets`: One or more sets to find the intersection with the original set.
+
+Return Value:
+- A new set containing elements that are common to all specified sets.
+
+Example:
+```python
+set1 = {1, 2, 3, 4, 5}
+set2 = {3, 4, 5, 6, 7}
+intersection_set = set1.intersection(set2)
+print(intersection_set)  # Output: {3, 4, 5}
+```
+
+In this example:
+- The `intersection()` method is called on `set1` with `set2` as the argument.
+- It returns a new set `{3, 4, 5}` containing elements that are present in both `set1` and `set2`.
+- The original sets `set1` and `set2` remain unchanged.
+
+You can also use the `&` operator as a shorthand for the `intersection()` method:
+```python
+intersection_set = set1 & set2
+```
+
+Both approaches achieve the same result. The `intersection()` method allows you to find common elements
+ from multiple sets, while the `&` operator can only be used to find the intersection of two sets at a time.

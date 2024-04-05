@@ -1,0 +1,35 @@
+In Python, the `symmetric_difference()` method is used to return a new set containing elements 
+that are present in either of the two sets, but not in both. It essentially performs the symmetric difference operation,
+ which finds elements that are unique to each set.
+
+Syntax:
+```python
+set.symmetric_difference(other_set)
+```
+
+Parameters:
+- `other_set`: The set to perform the symmetric difference with.
+
+Return Value:
+- A new set containing elements that are present in either set, but not in both.
+
+Example:
+```python
+set1 = {1, 2, 3, 4, 5}
+set2 = {3, 4, 5, 6, 7}
+symmetric_difference_set = set1.symmetric_difference(set2)
+print(symmetric_difference_set)  # Output: {1, 2, 6, 7}
+```
+
+In this example:
+- The `symmetric_difference()` method is called on `set1` with `set2` as the argument.
+- It returns a new set `{1, 2, 6, 7}` containing elements that are present in either `set1` or `set2`, but not in both.
+- The original sets `set1` and `set2` remain unchanged.
+
+You can also use the `^` operator as a shorthand for the `symmetric_difference()` method:
+```python
+symmetric_difference_set = set1 ^ set2
+```
+
+Both approaches achieve the same result. The `symmetric_difference()` method allows you to find unique elements from two sets,
+ while the `^` operator can only be used to find the symmetric difference of two sets at a time.

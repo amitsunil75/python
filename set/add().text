@@ -1,0 +1,24 @@
+In Python, the `add()` method is used to add a single element to a set. It modifies the original set by adding the specified element.
+
+Syntax:
+```
+set.add(element)
+```
+
+Parameters:
+- `element`: The element to be added to the set.
+
+Return Value:
+- The `add()` method doesn't return anything (`None`); it just modifies the original set in place.
+
+Example:
+```python
+my_set = {1, 2, 3}
+my_set.add(4)
+print(my_set)  # Output: {1, 2, 3, 4}
+```
+
+In this example:
+- The `add()` method is called on the set `my_set` with the argument `4`.
+- It adds the element `4` to the set, modifying it to `{1, 2, 3, 4}`. Note that sets are unordered, so the order of elements
+ in the printed set may vary.

@@ -1,0 +1,28 @@
+In Python, the `issuperset()` method is used to determine whether a set is a superset of another set or not. 
+A set A is considered a superset of another set B if all elements of B are also present in A.
+
+Syntax:
+```python
+set.issuperset(other_set)
+```
+
+Parameters:
+- `other_set`: The set to be checked against for being a subset.
+
+Return Value:
+- `True` if the set is a superset of the specified `other_set`, otherwise `False`.
+
+Example:
+```python
+set1 = {1, 2, 3, 4, 5}
+set2 = {2, 4}
+print(set1.issuperset(set2))  # Output: True
+```
+
+In this example:
+- The `issuperset()` method is called on `set1` with `set2` as the argument.
+- It returns `True` because all elements of `set2` (2 and 4) are also present in `set1`.
+- Therefore, `set1` is a superset of `set2`.
+
+Note: A set is considered to be a superset of itself. Therefore, if you call `issuperset()`
+ with the same set as an argument, it will return `True`.

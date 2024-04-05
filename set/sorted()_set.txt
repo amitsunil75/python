@@ -1,0 +1,47 @@
+In Python, the `sorted()` function is used to return a new sorted list from the elements of any iterable. This includes sets. 
+Unlike the `sort()` method available for lists, the `sorted()` function does not modify the original set. Instead, it creates and 
+returns a new sorted list.
+
+Syntax:
+```python
+sorted(iterable, key=None, reverse=False)
+```
+
+Parameters:
+- `iterable`: The iterable (e.g., set, list, tuple) whose elements are to be sorted.
+- `key` (optional): A function that is called on each element of the iterable, and the result of the function is used for sorting. 
+If not specified, the elements are sorted based on their natural order.
+- `reverse` (optional): A boolean value that specifies whether the sorting should be done in descending order (`True`) or ascending 
+order (`False`). By default, it is `False`.
+
+Return Value:
+- A new sorted list containing the sorted elements of the iterable.
+
+Example:
+```python
+my_set = {3, 1, 4, 1, 5, 9, 2, 6}
+sorted_list = sorted(my_set)
+print(sorted_list)  # Output: [1, 2, 3, 4, 5, 6, 9]
+```
+
+In this example:
+- The `sorted()` function is called on the set `my_set`.
+- It returns a new sorted list `[1, 2, 3, 4, 5, 6, 9]` containing the elements of the set sorted in ascending order.
+- The original set `my_set` remains unchanged.
+
+You can also use the `reverse` parameter to sort the list in descending order:
+```python
+my_set = {3, 1, 4, 1, 5, 9, 2, 6}
+sorted_list = sorted(my_set, reverse=True)
+print(sorted_list)  # Output: [9, 6, 5, 4, 3, 2, 1]
+```
+
+Additionally, you can use the `key` parameter to specify a custom sorting function. This function will be called on each element of 
+the iterable, and the results will be used for sorting:
+```python
+my_set = {"apple", "banana", "Orange", "grape"}
+sorted_list = sorted(my_set, key=str.lower)
+print(sorted_list)  # Output: ['apple', 'banana', 'grape', 'Orange']
+```
+In this example, the `key=str.lower` parameter ensures case-insensitive sorting by converting all elements 
+to lowercase before sorting.

@@ -1,0 +1,36 @@
+In Python, the `isdisjoint()` method is used to determine whether two sets have any elements in common. 
+If the sets are disjoint (i.e., they have no elements in common), the method returns `True`. Otherwise, 
+if the sets have at least one common element, the method returns `False`.
+
+Syntax:
+```python
+set.isdisjoint(other_set)
+```
+
+Parameters:
+- `other_set`: The set to be checked for disjointness with the original set.
+
+Return Value:
+- `True` if the sets are disjoint (have no elements in common), otherwise `False`.
+
+Example:
+```python
+set1 = {1, 2, 3}
+set2 = {4, 5, 6}
+print(set1.isdisjoint(set2))  # Output: True
+```
+
+In this example:
+- The `isdisjoint()` method is called on `set1` with `set2` as the argument.
+- Since `set1` and `set2` have no elements in common, the method returns `True`.
+- Therefore, `set1` and `set2` are disjoint sets.
+
+Another example where the sets have common elements:
+```python
+set3 = {3, 4, 5}
+print(set1.isdisjoint(set3))  # Output: False
+```
+
+In this example:
+- `set1` and `set3` have the common element `3`.
+- Therefore, the `isdisjoint()` method returns `False`, indicating that the sets are not disjoint.

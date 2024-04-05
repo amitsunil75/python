@@ -1,0 +1,29 @@
+In Python, the `difference_update()` method is used to remove from the original set all elements 
+that are also present in one or more specified sets. It modifies the original set by removing the common elements.
+
+Syntax:
+```python
+set.difference_update(*other_sets)
+```
+
+Parameters:
+- `*other_sets`: One or more sets whose elements are to be removed from the original set.
+
+Return Value:
+- The `difference_update()` method does not return anything (`None`). It modifies the original set in place.
+
+Example:
+```python
+set1 = {1, 2, 3, 4, 5}
+set2 = {3, 4, 5, 6, 7}
+set1.difference_update(set2)
+print(set1)  # Output: {1, 2}
+```
+
+In this example:
+- The `difference_update()` method is called on `set1` with `set2` as the argument.
+- It removes from `set1` all elements that are also present in `set2`.
+- After the operation, `set1` contains only elements `{1, 2}`, which are present in `set1` but not in `set2`.
+
+It's important to note that `difference_update()` modifies the original set in place and does not return a new set. 
+If you want to create a new set containing the difference, you can use the `difference()` method instead.

@@ -1,0 +1,35 @@
+In Python, the `difference()` method is used to return a new set that contains elements that are present in the original set 
+but not in another specified set. It essentially performs the set difference operation,
+ which subtracts elements of one set from another.
+
+Syntax:
+```python
+set.difference(*other_sets)
+```
+
+Parameters:
+- `*other_sets`: One or more sets whose elements are to be subtracted from the elements of the original set.
+
+Return Value:
+- A new set containing elements that are present in the original set but not in any of the specified sets.
+
+Example:
+```python
+set1 = {1, 2, 3, 4, 5}
+set2 = {3, 4, 5, 6, 7}
+difference_set = set1.difference(set2)
+print(difference_set)  # Output: {1, 2}
+```
+
+In this example:
+- The `difference()` method is called on `set1` with `set2` as the argument.
+- It returns a new set `{1, 2}` containing elements that are present in `set1` but not in `set2`.
+- The original sets `set1` and `set2` remain unchanged.
+
+You can also use the `-` operator as a shorthand for the `difference()` method:
+```python
+difference_set = set1 - set2
+```
+
+Both approaches achieve the same result. The `difference()` method allows you to subtract elements
+ from multiple sets, while the `-` operator can only be used to subtract elements of one set from another set at a time.

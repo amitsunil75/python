@@ -1,0 +1,37 @@
+In Python, there is no built-in method called `isSubSet()` for sets. However, you can use the `issubset()` 
+method to check if a set is a subset of another set.
+
+The `issubset()` method is used to determine whether all elements of one set are present in another set.
+ If all elements of the first set are also present in the second set, the method returns `True`; otherwise, it returns `False`.
+
+Syntax:
+```python
+set.issubset(other_set)
+```
+
+Parameters:
+- `other_set`: The set to check if it contains all elements of the original set.
+
+Return Value:
+- `True` if all elements of the original set are present in the specified `other_set`; otherwise, `False`.
+
+Example:
+```python
+set1 = {1, 2, 3}
+set2 = {1, 2, 3, 4, 5}
+print(set1.issubset(set2))  # Output: True
+```
+
+In this example:
+- The `issubset()` method is called on `set1` with `set2` as the argument.
+- Since all elements of `set1` (1, 2, and 3) are present in `set2`, the method returns `True`.
+- Therefore, `set1` is a subset of `set2`.
+
+You can also use the `<=` operator as a shorthand for the `issubset()` method:
+```python
+print(set1 <= set2)  # Output: True
+```
+
+Both approaches achieve the same result. The `issubset()` method allows you to check 
+if all elements of one set are present in another set, while the `<=` operator 
+can only be used to check the subset relationship between two sets at a time.

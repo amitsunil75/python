@@ -105,3 +105,8 @@ print(set(dt))
 # output:{'nature', 'race', 'name', 'age'}
 print(set(dt.values()))
 # output:{'indian', 'amit', 'Kind', '15'}
+fz=frozenset(st1)
+print(fz)
+# output:frozenset({0, 1, 3, 5, 7, 8, 11, 14, 17})
+print(max(fz))
+# output:17

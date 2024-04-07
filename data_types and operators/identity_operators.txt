@@ -1,0 +1,17 @@
+In Python, the identity operator `is` is used to check if two variables refer to the same object in memory. 
+It evaluates to `True` if the variables on either side of the operator point to the same object and `False` otherwise.
+
+Here's how it's used:
+
+```python
+x = [1, 2, 3]
+y = [1, 2, 3]
+
+print(x is y)  # False, because x and y refer to different objects in memory
+
+z = x
+print(x is z)  # True, because both x and z refer to the same object in memory
+```
+
+It's important to understand that `is` checks for object identity, not just equality. 
+Two objects may be equal in value but still occupy different memory locations, so `is` might return `False` in such cases.

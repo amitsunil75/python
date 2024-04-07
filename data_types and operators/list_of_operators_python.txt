@@ -1,0 +1,52 @@
+In Python, there are various types of operators categorized based on their functionality. Here's a list of operators in Python:
+
+1. Arithmetic Operators:
+   - Addition: +
+   - Subtraction: -
+   - Multiplication: *
+   - Division: /
+   - Floor Division: //
+   - Modulus (Remainder): %
+   - Exponentiation: **
+
+2. Comparison (Relational) Operators:
+   - Equal to: ==
+   - Not equal to: !=
+   - Greater than: >
+   - Less than: <
+   - Greater than or equal to: >=
+   - Less than or equal to: <=
+
+3. Assignment Operators:
+   - Assignment: =
+   - Add and Assign: +=
+   - Subtract and Assign: -=
+   - Multiply and Assign: *=
+   - Divide and Assign: /=
+   - Floor Divide and Assign: //=
+   - Modulus and Assign: %=
+   - Exponentiation and Assign: **=
+
+4. Logical Operators:
+   - Logical AND: and
+   - Logical OR: or
+   - Logical NOT: not
+
+5. Bitwise Operators:
+   - Bitwise AND: &
+   - Bitwise OR: |
+   - Bitwise XOR: ^
+   - Bitwise NOT: ~
+   - Left Shift: <<
+   - Right Shift: >>
+
+6. Membership Operators:
+   - `in`: Checks if a value exists in a sequence
+   - `not in`: Checks if a value does not exist in a sequence
+
+7. Identity Operators:
+   - `is`: Checks if two variables refer to the same object
+   - `is not`: Checks if two variables do not refer to the same object
+
+These are the main types of operators available in Python. Each serves a specific purpose
+ and can be used in different contexts within Python code.

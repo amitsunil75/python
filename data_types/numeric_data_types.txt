@@ -1,0 +1,40 @@
+In Python, numeric data types are used to represent numeric values such as integers, floating-point numbers, and complex numbers. These data types allow you to perform mathematical operations and manipulations on numerical data. Here are the main numeric data types in Python:
+
+### 1. Integer (`int`):
+- Represents whole numbers without any decimal point.
+- Examples: `-5`, `0`, `100`, `123456`.
+- There is no limit to the size of integers in Python, and they can be arbitrarily large (limited by available memory).
+
+### 2. Floating-Point (`float`):
+- Represents numbers with a decimal point or in exponential form.
+- Examples: `3.14`, `-0.001`, `2.0e3` (scientific notation).
+- Floating-point numbers are approximations and may not always be precise due to the limitations of binary floating-point arithmetic.
+
+### 3. Complex (`complex`):
+- Represents numbers in the form `a + bj`, where `a` and `b` are real numbers, and `j` represents the imaginary unit (√-1).
+- Examples: `3 + 4j`, `-2.5 - 1j`.
+- Complex numbers can be used for complex arithmetic and operations.
+
+### Examples of Numeric Data Types in Python:
+```python
+# Integer
+my_integer = 10
+print(my_integer)  # Output: 10
+print(type(my_integer))  # Output: <class 'int'>
+
+# Floating-point
+my_float = 3.14
+print(my_float)  # Output: 3.14
+print(type(my_float))  # Output: <class 'float'>
+
+# Complex
+my_complex = 2 + 3j
+print(my_complex)  # Output: (2+3j)
+print(type(my_complex))  # Output: <class 'complex'>
+```
+
+### Operations on Numeric Data Types:
+- Arithmetic operations such as addition (`+`), subtraction (`-`), multiplication (`*`), division (`/`), exponentiation (`**`), and modulus (`%`) can be performed on numeric data types.
+- Additionally, there are built-in functions and modules available in Python for mathematical calculations and manipulations.
+
+Python's numeric data types provide a versatile foundation for performing numerical computations and are widely used in various domains such as scientific computing, data analysis, and engineering.

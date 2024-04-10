@@ -4,7 +4,7 @@ print(sqrt(4.01))
 # outout:200
 print(ceil(4.01))
 # output:5
-print(floor(4.01))
+print(floor(4.09))
 # output:4
 print(factorial(3))
 # output:1*2*3=6

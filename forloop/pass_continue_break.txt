@@ -1,0 +1,39 @@
+In Python, `pass`, `continue`, and `break` are control flow statements that can be used within loops
+ like `for` loops to alter the flow of execution.
+
+1. `pass`: The `pass` statement is a null operation, meaning it does nothing. It is used when a
+ statement is syntactically required but you don't want to execute any code. It is often used as a 
+ placeholder when you're planning to implement something later.
+
+```python
+for i in range(5):
+    if i == 2:
+        pass  # do nothing
+    else:
+        print(i)
+```
+
+2. `continue`: The `continue` statement is used to skip the rest of the loop's body for the current iteration 
+and proceed to the next iteration of the loop.
+
+```python
+for i in range(5):
+    if i == 2:
+        continue  # skip the rest of the loop body for i == 2
+    print(i)
+```
+
+3. `break`: The `break` statement is used to exit the loop prematurely. It terminates the loop immediately 
+when executed, regardless of the loop condition or remaining iterations.
+
+```python
+for i in range(5):
+    if i == 2:
+        break  # exit the loop when i == 2
+    print(i)
+```
+
+In summary:
+- `pass` does nothing and is used as a placeholder.
+- `continue` skips the rest of the loop body for the current iteration.
+- `break` exits the loop immediately when executed.

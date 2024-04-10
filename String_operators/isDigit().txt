@@ -1,0 +1,24 @@
+The `isdigit()` method in Python checks whether all characters in a string are digits (0-9) or not. It
+ returns `True` if all characters in the string are digits, and `False` otherwise.
+
+Here's the syntax for `isdigit()`:
+
+```python
+str.isdigit()
+```
+
+- `str`: The string that you want to check for digits.
+
+Here's an example:
+
+```python
+string1 = "12345"
+string2 = "123abc"
+
+print(string1.isdigit())  # Output: True
+print(string2.isdigit())  # Output: False
+```
+
+In this example:
+- `string1` consists entirely of digits, so `string1.isdigit()` returns `True`.
+- `string2` contains characters other than digits, so `string2.isdigit()` returns `False`.

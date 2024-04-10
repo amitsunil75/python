@@ -1,0 +1,30 @@
+The `rindex()` method in Python is similar to the `rfind()` method, as it also finds the 
+last occurrence of a substring within a string. However, unlike `rfind()`, if the substring is not
+ found, `rindex()` raises a `ValueError`.
+
+Here's the syntax of the `rindex()` method:
+
+```python
+str.rindex(sub[, start[, end]])
+```
+
+- `str`: The string in which you want to search for the substring.
+- `sub`: The substring you want to find within the string.
+- `start` (optional): The starting index from where the search begins. Defaults to the beginning of the string.
+- `end` (optional): The ending index where the search ends. Defaults to the end of the string.
+
+Here's an example of how to use `rindex()`:
+
+```python
+sentence = "This is a sample sentence, and it contains the word 'sample' twice."
+index = sentence.rindex("sample")
+print("The last occurrence of 'sample' starts at index:", index)
+```
+
+Output:
+```
+The last occurrence of 'sample' starts at index: 42
+```
+
+In this example, `rindex()` returns `42`, which is the index of the start of the last occurrence 
+of the substring "sample" in the `sentence` string. If the substring is not found, `rindex()` raises a `ValueError`.

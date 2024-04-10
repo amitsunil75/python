@@ -1,0 +1,28 @@
+The `isascii()` method in Python checks whether all characters in a string are ASCII characters or not. 
+ASCII (American Standard Code for Information Interchange) is a character encoding standard that represents 
+text in computers and communication equipment. ASCII characters include the English alphabet (both uppercase and lowercase), 
+digits, and various symbols.
+
+Here's the syntax for `isascii()`:
+
+```python
+str.isascii()
+```
+
+- `str`: The string that you want to check for ASCII characters.
+
+The method returns `True` if all characters in the string are ASCII characters, and `False` otherwise.
+
+Here's an example:
+
+```python
+string1 = "Hello, World!"
+string2 = "Привет, мир!"  # This string contains non-ASCII characters
+
+print(string1.isascii())  # Output: True
+print(string2.isascii())  # Output: False
+```
+
+In this example:
+- `string1` consists entirely of ASCII characters, so `string1.isascii()` returns `True`.
+- `string2` contains non-ASCII characters (Cyrillic characters), so `string2.isascii()` returns `False`.

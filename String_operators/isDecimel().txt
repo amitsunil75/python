@@ -1,0 +1,21 @@
+The `isdecimal()` method in Python checks whether all characters in a string are decimal characters (0-9) or not. 
+It returns `True` if all characters in the string are decimal characters, and `False` otherwise. However, 
+it returns `False` for strings that contain a decimal point, or any other non-decimal characters.
+
+Here's the syntax for `isdecimal()`:
+
+```python
+str.isdecimal()
+```
+
+- `str`: The string that you want to check for decimal characters.
+
+Here's how you can use it:
+
+```python
+numt = '0.3444555'
+print(numt.isdecimal())  # Output: False
+```
+
+In this example, since the string `numt` contains a decimal point, `isdecimal()` returns `False`. 
+If you want to check if a string represents a decimal number, you might consider using other methods like `isdigit()` or `isnumeric()`.

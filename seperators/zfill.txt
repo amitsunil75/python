@@ -1,0 +1,30 @@
+In Python, the `zfill()` method is used to pad a string with zeros (0) on the left side until
+ the string reaches the specified width. This method is particularly useful for formatting strings that
+  represent numbers, ensuring that they have a specific length by adding leading zeros if necessary.
+
+Here's how you can use `zfill()`:
+
+```python
+number = "42"
+padded_number = number.zfill(5)  # Pad with zeros to make the string length 5
+print(padded_number)  # Output: "00042"
+```
+
+In this example:
+
+- `number` is a string containing the number "42".
+- `number.zfill(5)` pads the string with zeros to make its length 5. Since the original string length is 2, it 
+adds three zeros to the left to reach the specified width.
+
+The general syntax of the `zfill()` method is:
+
+```python
+string.zfill(width)
+```
+
+- `string`: The original string that you want to pad with zeros.
+- `width`: The desired width of the resulting string after padding. If the length of the original string is less than
+ `width`, zeros are added on the left until the length becomes equal to `width`.
+
+It's important to note that if the original string already has a length equal to or greater than the specified width, the
+ `zfill()` method will not add any zeros and will return the original string unchanged.

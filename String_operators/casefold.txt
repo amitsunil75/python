@@ -1,0 +1,19 @@
+The `casefold()` method in Python is used to convert strings to a casefolded version for caseless matching. 
+It is similar to the `lower()` method, but more aggressive in converting the string to a form that 
+can be used for case-insensitive comparisons.
+
+Here's how you can use `casefold()`:
+
+```python
+string = "Hello World"
+casefolded_string = string.casefold()
+print(casefolded_string)  # Output: hello world
+```
+
+In this example, the `casefold()` method converts the string "Hello World" to lowercase, resulting in "hello world".
+
+The `casefold()` method is particularly useful when you need to perform case-insensitive comparisons or
+ when working with non-ASCII characters, as it can handle a broader range of characters than `lower()`.
+
+It's important to note that `casefold()` is generally preferred over `lower()` for caseless matching
+ because it handles a wider range of characters, especially in languages other than English.

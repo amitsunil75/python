@@ -1,0 +1,29 @@
+The `rfind()` method in Python is used to find the last occurrence of a substring within a string. 
+It returns the highest index of the substring if it's found, and `-1` if the substring is not found.
+
+Here's the syntax of the `rfind()` method:
+
+```python
+str.rfind(sub[, start[, end]])
+```
+
+- `str`: The string in which you want to search for the substring.
+- `sub`: The substring you want to find within the string.
+- `start` (optional): The starting index from where the search begins. Defaults to the beginning of the string.
+- `end` (optional): The ending index where the search ends. Defaults to the end of the string.
+
+Here's an example of how to use `rfind()`:
+
+```python
+sentence = "This is a sample sentence, and it contains the word 'sample' twice."
+index = sentence.rfind("sample")
+print("The last occurrence of 'sample' starts at index:", index)
+```
+
+Output:
+```
+The last occurrence of 'sample' starts at index: 42
+```
+
+In this example, `rfind()` returns `42`, which is the index of the start of the last occurrence of 
+the substring "sample" in the `sentence` string. If the substring is not found, `rfind()` returns `-1`.

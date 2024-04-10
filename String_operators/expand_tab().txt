@@ -1,0 +1,17 @@
+The `expandtabs()` method in Python is used to replace tab characters (`\t`) in a string with spaces. 
+It allows you to control the spacing between tab stops by specifying the number of spaces each tab should be expanded to.
+
+Here's how you can use `expandtabs()`:
+
+```python
+string = "Hello\tWorld"
+expanded_string = string.expandtabs(2)
+print(expanded_string)  # Output: Hello  World
+```
+
+In this example, the original string contains a tab character between "Hello" and "World". When `expandtabs(2)` is
+ called, each tab character (`\t`) in the string is replaced by two spaces, resulting in "Hello  World".
+
+The `expandtabs()` method is useful when you want to format text with consistent spacing, especially when dealing with
+ text that contains tabular data. By specifying the number of spaces each tab should be expanded to, you can control
+  the appearance of the text when printed or displayed.

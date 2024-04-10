@@ -1,20 +1,22 @@
-
-# if st.find('a')!=-1:
-#     print('its vowel')
-# elif st.find('e')!=-1:
-#     print('its a vowel')
-# elif st.find('i')!=-1:
-#     print('its a vowel')
-# elif st.find('o')!=-1:
-#     print('its a vowel')
-# elif st.find('u')!=-1:
-#     print('its a vowel')
-# else:
-#     print('its not vowel')
-
-# print(st.find('i'))
-
+# using only if statement 
 st = input('Enter a string: ')
+
+if st.find('a')!=-1:
+    print('its vowel')
+elif st.find('e')!=-1:
+    print('its a vowel')
+elif st.find('i')!=-1:
+    print('its a vowel')
+elif st.find('o')!=-1:
+    print('its a vowel')
+elif st.find('u')!=-1:
+    print('its a vowel using else if statement')
+else:
+    print('its not vowel using  using else if satement')
+
+
+
+
 vowels =['a','e','i','o','u']
 isVowel=False
 for x in  vowels:

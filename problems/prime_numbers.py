@@ -1,14 +1,17 @@
-primeNumber= int(input('enter a prime number: '))
-isPrime=True
-for i in range(1,primeNumber):
-    for  x in range(2,i):
-        if i%x==0:
-            isPrime=False
-    
-if isPrime:
+number = int(input('enter a number: '))
+
+if number==0 or number==1:
+    print('prime nor comaposite')           
+else :
+ isprime=True
+ for i in range(2,number):
+    if number%i==0:
+        isprime=False
+        break
+
+ if isprime:
     print('its prime')
-else:
-    print('its not a prime')
+ else:print('not prime')
 
 startIndex = int(input('enter start index:'))
 endIndex = int(input('enter end index:'))

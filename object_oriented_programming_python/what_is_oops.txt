@@ -1,0 +1,3 @@
+Object-Oriented Programming (OOP) is a way of writing code that organizes it around objects, 
+which are like things in the real world. Each object has data (like its color or size) and can do things (like move or make sounds). 
+OOP helps make code easier to understand and reuse.

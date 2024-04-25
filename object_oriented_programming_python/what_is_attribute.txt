@@ -1,0 +1,28 @@
+An attribute in Python is a piece of information associated with an object.
+ Attributes are like variables that belong to individual objects and define their characteristics or state. 
+
+In the context of classes and objects:
+
+- **Instance Attributes**: These are attributes specific to each object instance. 
+They are defined within the constructor method (`__init__`) of the class and are accessed using dot notation (`object.attribute`).
+
+- **Class Attributes**: These are attributes shared among all instances of a class. They are defined outside of any method in the class and are accessed using the class name (`ClassName.attribute`) or an instance of the class.
+
+Here's a simple example demonstrating instance attributes:
+
+```python
+class Car:
+    def __init__(self, brand, model):
+        self.brand = brand
+        self.model = model
+
+car1 = Car("Toyota", "Camry")
+car2 = Car("Honda", "Accord")
+
+print(car1.brand)  # Output: Toyota
+print(car2.model)  # Output: Accord
+```
+
+In this example, `brand` and `model` are instance attributes of the `Car` class. Each instance of the `Car` class (`car1` and `car2`) has its own set of these attributes. They define the specific brand and model of each car object.
+
+Attributes provide a way to store and retrieve information about objects, helping to represent real-world entities in your Python programs.

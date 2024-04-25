@@ -1,0 +1,2 @@
+An object in Python is a particular instance of a class.
+ You can think of a class as a blueprint or template, and an object as a concrete realization of that blueprint.

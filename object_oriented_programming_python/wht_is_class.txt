@@ -1,0 +1,2 @@
+In Python, a class is like a blueprint or template for creating objects. 
+It defines the properties (attributes) and behaviors (methods) that objects of that class will have. Here's a simple explanation:

@@ -1,0 +1,29 @@
+In Python, "parameter" and "argument" are related concepts but have different meanings:
+
+1. **Parameter**:
+   - A parameter is a variable in a function definition. It represents the data that a function expects to receive 
+   when it's called. Parameters are specified in the function definition and serve as placeholders for the actual values (arguments)
+    that will be passed to the function.
+   - Parameters are defined inside the parentheses in the function header.
+
+    ```python
+    def my_function(parameter1, parameter2):
+        # Function body
+        pass
+    ```
+
+2. **Argument**:
+   - An argument is a value that is passed to a function when it's called. It corresponds to the actual data that is supplied to
+    the function. Arguments are the actual values that are passed to a function when it's invoked.
+   - Arguments are specified inside the parentheses when calling the function.
+
+    ```python
+    my_function(argument1, argument2)
+    ```
+
+To summarize:
+- Parameters are variables in a function definition, while arguments are the actual values supplied to the function when it's called.
+- Parameters are used to define the expected input for a function, while arguments are the values that fulfill those expectations during function invocation.
+- Parameters are defined in the function header, while arguments are provided when calling the function.
+
+Understanding the distinction between parameters and arguments is essential for writing functions and calling them correctly in Python.

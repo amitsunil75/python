@@ -1,0 +1,55 @@
+Object-oriented programming (OOP) is a fundamental paradigm in Python. Here's a list of the key OOP topics in Python:
+
+1. **Class**: 
+   - Classes are blueprints for creating objects. 
+   They define the properties (attributes) and behaviors (methods) of objects.
+
+2. **Object**: 
+   - Objects are instances of classes. They encapsulate data (attributes) and behavior (methods) associated with the class.
+
+3. **Attributes**: 
+   - Attributes are variables that belong to objects and define their state. 
+   They are accessed using dot notation (`object.attribute`).
+
+4. **Methods**: 
+   - Methods are functions defined within a class and are used to perform operations on objects.
+
+5. **Inheritance**: 
+   - Inheritance allows a class (subclass) to inherit attributes and methods from another class (superclass). 
+   It facilitates code reuse and promotes modular design.
+
+6. **Polymorphism**: 
+   - Polymorphism allows objects of different classes to be treated as objects of a common superclass. 
+   
+   It enables flexibility and extensibility in code.
+
+7. **Encapsulation**: 
+   - Encapsulation refers to the bundling of data (attributes) and methods that operate on the data within a class. 
+   It hides the internal state of objects and restricts direct access to it.
+
+8. **Abstraction**: 
+   - Abstraction involves modeling real-world entities as classes to represent their essential characteristics 
+   and behaviors while hiding unnecessary details.
+
+9. **Method Overriding**: 
+   - Method overriding occurs when a subclass provides a specific implementation of a method that is already defined in its superclass. 
+   It allows customization of behavior in subclasses.
+
+10. **Method Overloading**:
+    - Although Python does not support traditional method overloading (where multiple methods have the same name but different 
+    signatures), you can achieve similar functionality using default arguments or variable arguments (`*args`, `**kwargs`).
+
+11. **Class and Instance Variables**:
+    - Class variables are shared among all instances of a class, while instance variables are unique to each instance.
+     Class variables are defined outside of any method in a class, while instance variables are defined within methods using `self`.
+
+12. **Class Methods and Static Methods**:
+    - Class methods are methods that are bound to the class rather than its instances. They can access and modify 
+    class-level variables. Static methods are similar to class methods but don't receive a reference to the class or instance.
+
+13. **Getter and Setter Methods**:
+    - Getter methods are used to retrieve the value of a private attribute, and setter 
+    methods are used to modify the value of a private attribute while enforcing validation rules.
+
+These topics constitute the core principles of object-oriented programming in Python. 
+Understanding them is crucial for building robust and maintainable software systems.

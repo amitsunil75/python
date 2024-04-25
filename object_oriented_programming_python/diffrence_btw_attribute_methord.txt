@@ -1,0 +1,3 @@
+Attributes are data stored within an object, defining its state.
+ Methods are functions associated with objects, allowing them to perform actions or operations.
+  Attributes represent characteristics of an object, while methods define behaviors/actions that the object can perform.

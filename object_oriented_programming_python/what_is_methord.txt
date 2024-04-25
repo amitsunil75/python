@@ -1,0 +1,50 @@
+In Object-Oriented Programming (OOP) in Python, a method is a function that is associated with an object. 
+Methods are defined within a class and operate on objects created from that class. 
+They enable objects to perform actions and interact with their own data.
+
+There are several types of methods in Python classes:
+
+1. **Instance Methods**: These are the most common type of methods. 
+They operate on instances of the class and can access and modify instance attributes. Instance methods have `self` as their 
+first parameter, which refers to the instance itself.
+
+    ```python
+    class MyClass:
+        def instance_method(self):
+            return "This is an instance method."
+
+    obj = MyClass()
+    print(obj.instance_method())  # Output: This is an instance method.
+    ```
+
+2. **Class Methods**: These methods are bound to the class itself rather than its instances.
+
+ They can access and modify class-level attributes. Class methods have `cls` as their first parameter, 
+ which refers to the class itself.
+
+    ```python
+    class MyClass:
+        class_attr = "This is a class attribute."
+        
+        @classmethod
+        def class_method(cls):
+            return cls.class_attr
+
+    print(MyClass.class_method())  # Output: This is a class attribute.
+    ```
+
+3. **Static Methods**: These methods are not bound to either the class or its instances. They are just regular functions 
+defined within a class for organizational purposes. They cannot access or modify class or instance attributes 
+and are mainly used for utility functions.
+
+    ```python
+    class MyClass:
+        @staticmethod
+        def static_method():
+            return "This is a static method."
+
+    print(MyClass.static_method())  # Output: This is a static method.
+    ```
+
+Each method type serves a different purpose in object-oriented programming and offers flexibility in 
+designing and organizing your classes and objects.

@@ -16,3 +16,4 @@ print(fact)
 # output:
 # Enter a number: 5
 # 120
+

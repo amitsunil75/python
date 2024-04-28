@@ -1,0 +1,64 @@
+Encapsulation is one of the fundamental concepts in object-oriented programming (OOP) and is used to restrict access 
+to certain parts of an object and to prevent users from directly modifying internal state or data of the object. 
+In Python, encapsulation is achieved primarily through the use of access modifiers and property methods.
+
+Here's a detailed explanation of encapsulation in Python:
+
+### Access Modifiers:
+Access modifiers are keywords used to control the visibility of attributes and methods within a class. In Python, 
+there are no explicit access modifiers like `public`, `private`, or `protected` as in some other programming languages like Java. 
+Instead, Python uses naming conventions to indicate the level of visibility:
+
+1. **Public**: Attributes and methods that are not prefixed with an underscore are considered public and can be accessed from outside 
+the class.
+
+2. **Protected**: Attributes and methods prefixed with a single underscore (e.g., `_variable`, `_method()`) are conventionally
+ considered protected. While they can still be accessed from outside the class, it indicates that they are intended for internal use 
+ and should not be accessed directly by users of the class.
+
+3. **Private**: Attributes and methods prefixed with double underscores (e.g., `__variable`, `__method()`) are considered private. 
+They cannot be accessed directly from outside the class, and attempting to do so will result in an error.
+
+### Property Methods:
+Property methods provide a way to encapsulate class attributes by defining getter, setter, and deleter methods for accessing and
+ modifying the attribute's value. This allows for more controlled access to the attribute, enabling validation and enforcement of 
+ certain rules.
+
+```python
+class MyClass:
+    def __init__(self):
+        self._value = None  # Protected attribute
+    
+    # Getter method
+    def get_value(self):
+        return self._value
+    
+    # Setter method
+    def set_value(self, value):
+        # Perform validation or other operations
+        if value >= 0:
+            self._value = value
+        else:
+            raise ValueError("Value must be non-negative")
+    
+    # Deleter method
+    def del_value(self):
+        del self._value
+    
+    # Define property
+    value = property(get_value, set_value, del_value)
+
+# Usage
+obj = MyClass()
+obj.value = 10  # Calls setter method
+print(obj.value)  # Calls getter method
+```
+
+In the example above:
+- `_value` is a protected attribute.
+- `get_value()`, `set_value()`, and `del_value()` are property methods defining getter, setter, and deleter methods for the `value`
+property.
+- The `property()` function is used to define the `value` property with the specified getter, setter, and deleter methods.
+
+Encapsulation helps in hiding the internal implementation details of a class and provides a clean interface for interacting with
+ objects, promoting modularity, reusability, and maintainability of code.

@@ -1,0 +1,42 @@
+Inheritance is a key feature in object-oriented programming (OOP) languages like Python. It allows a class to inherit 
+attributes and methods from another class, referred to as the superclass or parent class. The class that inherits from the 
+superclass is called the subclass or child class. 
+
+Here's a simple example in Python:
+
+```python
+class Animal:
+    def __init__(self, species):
+        self.species = species
+
+    def sound(self):
+        pass
+
+class Dog(Animal):  # Dog inherits from Animal
+    def sound(self):
+        return "Woof!"
+
+class Cat(Animal):  # Cat inherits from Animal
+    def sound(self):
+        return "Meow!"
+
+# Creating instances of subclasses
+dog = Dog("Canine")
+cat = Cat("Feline")
+
+# Accessing attributes and methods of the superclass through subclasses
+print(dog.species)  # Output: Canine
+print(cat.species)  # Output: Feline
+
+print(dog.sound())  # Output: Woof!
+print(cat.sound())  # Output: Meow!
+```
+
+In this example:
+- `Animal` is the superclass, with attributes and methods common to all animals.
+- `Dog` and `Cat` are subclasses of `Animal`, inheriting its attributes and methods.
+- `Dog` and `Cat` provide their implementations of the `sound` method, overriding the method defined in `Animal`.
+- Instances of `Dog` and `Cat` can access both their own methods and attributes as well as those inherited from `Animal`.
+
+Inheritance promotes code reusability and helps create a hierarchical structure among classes, making it easier to
+ manage and maintain code.

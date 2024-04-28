@@ -1,0 +1,55 @@
+Polymorphism is a key concept in object-oriented programming (OOP) that allows objects of different classes to be treated 
+as objects of a common superclass. In Python, polymorphism is achieved through method overriding and method overloading.
+
+1. **Method Overriding**:
+   Method overriding occurs when a subclass provides a specific implementation of a method that is already 
+   defined in its superclass. This allows objects of the subclass to use the overridden method instead of the 
+   one defined in the superclass.
+
+   ```python
+   class Animal:
+       def sound(self):
+           return "Animal makes a sound"
+
+   class Dog(Animal):
+       def sound(self):
+           return "Woof!"
+
+   class Cat(Animal):
+       def sound(self):
+           return "Meow!"
+
+   # Example of polymorphism
+   def make_sound(animal):
+       return animal.sound()
+
+   dog = Dog()
+   cat = Cat()
+
+   print(make_sound(dog))  # Output: Woof!
+   print(make_sound(cat))  # Output: Meow!
+   ```
+
+2. **Method Overloading**:
+   Method overloading allows a class to define multiple methods with the same name but different parameters.
+    However, Python does not support method overloading in the traditional sense (as in languages like Java), 
+    but you can achieve similar behavior using default parameter values or variable-length arguments.
+
+   ```python
+   class MathOperations:
+       def add(self, a, b):
+           return a + b
+
+       def add(self, a, b, c):
+           return a + b + c
+
+   math_ops = MathOperations()
+   print(math_ops.add(2, 3))       # Error: TypeError: add() missing 1 required positional argument: 'c'
+   print(math_ops.add(2, 3, 4))    # Output: 9
+   ```
+
+In this example, attempting to call `add()` with two arguments results in an error because Python does not support
+ method overloading based on the number of arguments. Instead, you can achieve similar functionality by defining a single method with default parameter values or by using variable-length arguments (`*args` and `**kwargs`).
+
+Polymorphism allows for code reuse, flexibility, and extensibility in object-oriented designs. It enables different
+ classes to be used interchangeably, simplifying code and promoting modular and reusable components.

@@ -84,3 +84,73 @@ In this example:
 - `_protected_attr` is a protected attribute and can be accessed from outside the class.
 - `__private_attr` is a private attribute and cannot be accessed from outside the class. Attempting to do so will
  raise an `AttributeError`.
+
+
+
+
+
+ Certainly! Here are the main differences between public, private, and protected attributes in Python, along with a brief example:
+
+1. **Accessibility**:
+   - **Public**: Accessible from anywhere, both within the class and outside the class.
+   - **Private**: Accessible only from within the class where it is defined.
+   - **Protected**: Accessible only from within the class and its subclasses.
+
+```python
+class MyClass:
+    public_attribute = "Public"      # Public attribute
+    _protected_attribute = "Protected"   # Protected attribute
+    __private_attribute = "Private"  # Private attribute
+
+# Accessing attributes
+obj = MyClass()
+print(obj.public_attribute)            # Output: Public
+print(obj._protected_attribute)         # Output: Protected
+print(obj.__private_attribute)          # Error: AttributeError: 'MyClass' object has no attribute '__private_attribute'
+```
+
+2. **Name Mangling**:
+   - **Public**: No name mangling.
+   - **Private**: Name mangling applied (attribute name prefixed with `_ClassName`).
+   - **Protected**: No name mangling.
+
+3. **Inheritance**:
+   - **Public**: Inherited by subclasses.
+   - **Private**: Not inherited by subclasses.
+   - **Protected**: Inherited by subclasses.
+
+4. **Convention**:
+   - **Public**: No special convention.
+   - **Private**: Name prefixed with double underscore (`__`).
+   - **Protected**: Name prefixed with single underscore (`_`).
+
+5. **Encapsulation**:
+   - **Public**: No encapsulation.
+   - **Private**: Encapsulation enforced, hiding implementation details.
+   - **Protected**: Encapsulation with limited access within class hierarchy.
+
+```python
+class MyClass:
+    def __init__(self):
+        self.public = "Public"        # Public attribute
+        self._protected = "Protected"    # Protected attribute
+        self.__private = "Private"       # Private attribute
+
+class SubClass(MyClass):
+    def display(self):
+        print(self.public)           # Accessible
+        print(self._protected)       # Accessible
+        # print(self.__private)      # Error: AttributeError: 'SubClass' object has no attribute '_SubClass__private'
+
+# Example usage
+obj = MyClass()
+print(obj.public)          # Accessible
+print(obj._protected)      # Accessible
+# print(obj.__private)     # Error: AttributeError: 'MyClass' object has no attribute '__private'
+
+sub_obj = SubClass()
+sub_obj.display()  # Accessible from subclass
+```
+
+These differences highlight the access levels and encapsulation characteristics of public, private, and
+ protected attributes in Python classes,allowing for better control over data access and manipulation.

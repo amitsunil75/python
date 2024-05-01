@@ -50,7 +50,7 @@ class Phonebook:
             while True:
                  phone_input=input('enter phone number:')
                  print(phone_input)
-                 if phone_input == '' :
+                 if phone_input is None :
                     break
                         
                  else:
@@ -71,6 +71,16 @@ class Phonebook:
             
         elif (myChoice==4):
             self.display_contact()
+        elif (myChoice==3):
+             while True:
+              email =input('enter email to Delete the contact: ')
+              if not self.validateEmail(email):
+                    print('Invalid email address provided')
+              else:
+                    break
+             self.delete_Contact(email)
+             
+
         elif (myChoice==6):
             self.contact_details.clear()
             print('All Data Erased')
@@ -89,20 +99,23 @@ class Phonebook:
     def add_contact(self,name,email,phone):
     
         #  if(self.validateEmail(email) and self.validatePhone(phone)):
+        contactAdded=False
         for contacts in self.contact_details:
             if(contacts['email']==email):
                 print('contact already exist')
-            else:
-                print('Contact added successfully.')
-                self.contact_details.append(
+                break
+        else:
+           
+            self.contact_details.append(
             {
                 "name":name,
                 "email":email,
                 "phone":phone
             } )
-            name=''
-            email=''
-            phone=''
+        if contactAdded:
+            print('Contact added successfully.')
+
+            
                 
         # else:
         #     if not self.validateEmail(email):
@@ -115,7 +128,7 @@ class Phonebook:
                 if name is not None:
                     contacts['name']=name
                 if phone is not None:
-                    contacts['phone']=email
+                    contacts['phone']=phone
                 print('contact details updated')
                 self.choice()
                 return
@@ -127,7 +140,8 @@ class Phonebook:
         for contact in self.contact_details:
             if(contact['email']==email):
                  self.contact_details.remove(contact)
-                 print('Conta0.ct deleted successfully.')
+                 print('Contact deleted successfully.')
+                 self.choice()
                  return
         
         print('Contact not present in the list')
@@ -138,7 +152,7 @@ class Phonebook:
     def display_contact(self):
         for contact in self.contact_details:
            if any(value is None for value in contact.values()):
-             print('Some contact details are missing.')
+             print('')
            else:
              print(contact)
         print('Displayed all contacts.')
